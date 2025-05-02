@@ -31,3 +31,4 @@ rsync -a ~/Downloads/Linux_ISOs/ /usr/local/share/Calendar/
 - E. By seeing if the permissions of the files are different.
 
 C. By seeing if the ‘last modified’ timestamp of the files are different. [How `rsync` works](https://rsync.samba.org/how-rsync-works.html)
+
