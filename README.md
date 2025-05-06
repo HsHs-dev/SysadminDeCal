@@ -8,7 +8,7 @@ This repo houses the Lab assignments of UCB course **[Sysadmin DeCal](https://de
 - [x] Core Shell & Shell Scripting
 - [x] Packages
 - [x] Services
-- [ ] Networking 101
+- [x] Networking 101
 - [ ] Web Servers
 - [ ] Security Fundamentals
 - [x] Version Control (git) and Backups
