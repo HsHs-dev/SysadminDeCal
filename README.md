@@ -4,7 +4,7 @@ This repo houses the Lab assignments of UCB course **[Sysadmin DeCal](https://de
 
 ## Labs
 
-- [x] Lab1: History of UNIX, Intro to Linux, FOSS + BONUS my solutions to [OverTheWire](https://overthewire.org/wargames/bandit/) first 15 bandit challenges which teach you some linux basics, in addition to trying `ssh` if you don't have an access to a remote machine.
+- [x] Lab1: History of UNIX, Intro to Linux, FOSS + BONUS my [solutions](https://github.com/HsHs-dev/SysadminDeCal/blob/main/Lab1/OverTheWire-Wargames-LinuxBasics.md) to [OverTheWire](https://overthewire.org/wargames/bandit/) first 15 bandit challenges which teach you some linux basics, in addition to trying `ssh` if you don't have an access to a remote machine.
 - [x] Core Shell & Shell Scripting
 - [x] Packages
 - [x] Services
@@ -15,3 +15,7 @@ This repo houses the Lab assignments of UCB course **[Sysadmin DeCal](https://de
 - [ ] Docker
 - [ ] Puppet
 - [ ] Kubernetes
+
+## Notes
+
+Each lab directory has a `lab.md` file that has answers to lab reading questions that works as a lab notes.
