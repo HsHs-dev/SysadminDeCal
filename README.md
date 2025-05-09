@@ -9,7 +9,7 @@ This repo houses the Lab assignments of UCB course **[Sysadmin DeCal](https://de
 - [x] Packages
 - [x] Services
 - [x] Networking 101
-- [ ] Web Servers
+- [x] Web Servers
 - [ ] Security Fundamentals
 - [x] Version Control (git) and Backups
 - [ ] Docker
