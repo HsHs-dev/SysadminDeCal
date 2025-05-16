@@ -131,4 +131,43 @@ strings data.txt | grep "=="
 
 ## Bandit Level 10 → Level 11
 
+Quite simple soultion, the data.txt contains [base64 encoded data](https://www.freecodecamp.org/news/what-is-base64-encoding/#heading-what-is-base64) so just decode it with base64 decoder
+
+```bash
+base64 -d data.txt
+```
+
+> password is: dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
+
+## Bandit Level 11 → Level 12
+
+This puzzel depends on an old encryption method called [ROT13](https://en.wikipedia.org/wiki/ROT13) shifting every letter by 13 positions, so we will reverse everyletter by 13 positions. We will use the `tr` command which takes a range, and the substitution range for it
+
+a b c d e f g h i j k l m n o p q r s t u v w x y z
+
+↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓
+
+n o p q r s t u v w x y z a b c d e f g h i j k l m
+
+```bash
+cat data.txt | tr 'a-zA-Z' 'n-za-mN-ZA-M'
+```
+
+> password is: 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
+
+
+## Bandit Level 12 → Level 13
+
+That was an exhausting one, just start with
+
+```bash
+xxd -r data.txt >> data.bin
+```
+
+and then it's just a train of decompressing files.
+
+> password is: FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
+
+## Bandit Level 13 → Level 14
+
 <!-- TODO -->
