@@ -33,7 +33,7 @@ It's quite tricky here because the file name is a dash `-`, and dashes has a spe
 
 ## Bandit Level 2 → Level 3
 
-this is an easy one, spaces are special characters, so you just need to tell the shell to skip thim by putting a backslash before each space; 
+this is an easy one, spaces are special characters, so you just need to tell the shell to skip thim by putting a backslash before each space;
 
 ```bash
 cat spaces\ in\ this\ filename
@@ -45,7 +45,7 @@ cat spaces\ in\ this\ filename
 
 We can't keep our secrets just out there, so we gonna keep them in hidden files, just `cd` to inhere directory and list the files with the flag `-a` which will list all files including hidden ones
 `ls -a`
-The file that we looking for is `...Hiding-From-You` 
+The file that we looking for is `...Hiding-From-You`
 
 ```bash
 cat ...Hiding-From-You
@@ -155,7 +155,6 @@ cat data.txt | tr 'a-zA-Z' 'n-za-mN-ZA-M'
 
 > password is: 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
 
-
 ## Bandit Level 12 → Level 13
 
 That was an exhausting one, just start with
@@ -170,4 +169,16 @@ and then it's just a train of decompressing files.
 
 ## Bandit Level 13 → Level 14
 
-<!-- TODO -->
+This level was pure ssh sorcery that I followed [this guide](https://mayadevbe.me/posts/overthewire/bandit/level14/) to understand how to get the password
+
+## Bandit Level 14 → Level 15
+
+This was relatively easy, we will use `netcat` to send the password of current level to the specified machine with the given port:
+
+```bash
+nc localhost 30000
+```
+
+then give it the password by *catting* `/etc/bandit/bandit14`
+
+> password is: 8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
